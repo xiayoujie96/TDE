@@ -2,9 +2,9 @@
 #entradas
 lataValor=50
 lataPinta=3
-#processamento
 alturaCilindro=float(input("Insira a altura do cilindro:"))
 raioCilindro=float(input("Insira o raio do cilindro:"))
+#processamento
 calculoAreaM2=2*3.1415*raioCilindro*(alturaCilindro+raioCilindro)
 #saida
 print("A area total do cilindro é de:",calculoAreaM2)
