@@ -1,0 +1,8 @@
+preco = int(input('Insira aqui o valor total da compra: '))
+print ('Você tem quatro opções: 1 - Pagar à vista com 8% de desconto \n 2 - em 2x com 4% de desconto \n 3 - em 3x sem desconto \n 4 -  em 4x com 4% de acrescimo')
+resposta = int(input('Insira aqui o numero do modo de pagamento escolhido: '))
+if resposta == 1: print (f'Uma parcela de {preco*0.92:.2f}')
+elif resposta == 2: print (f'Duas parcelas de {(preco*0.96)/2:.2f}')
+elif resposta == 3: print (f'Três parcelas de {preco/3:.2f}')
+elif resposta == 4: print (f'Quatro parcelas de {(preco*1.04)/4:.2f}')
+else: print ('Opção invalida')
