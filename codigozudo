@@ -1,0 +1,26 @@
+if __name__ == '__main__':
+    nota_presenca = []
+    for _ in range(int(input('Insira a quantidade de alunos a serem avaliados: '))):
+        nota = float(input(('nota: ')))
+        presenca = float(input('presença em porcentagem, de 0 a 100 e sem simbolos: '))
+        nome_aluno = input('Insira o nome: ')
+        nota_presenca.append([nota, presenca, nome_aluno])
+        
+def conceito():
+    for  nota, presenca, nome_aluno in nota_presenca:
+        if presenca < 70:
+            print(f'Aluno {nome_aluno} reprovado por falta')
+        elif nota >= 9:
+            print (f'A é a nota do aluno: {nome_aluno}')
+        elif nota >= 8:
+            print(f'B é a nota do aluno: {nome_aluno}')
+        elif nota >= 7:
+            print(f'C é a nota do aluno: {nome_aluno}')
+        elif nota >= 6:
+            print (f'D é a nota do aluno: {nome_aluno}')
+        elif nota > 4:
+            print(f'E é a nota do aluno: {nome_aluno}')
+        else: 
+            print(f'F é a nota do aluno: {nome_aluno}')
+
+conceito()
